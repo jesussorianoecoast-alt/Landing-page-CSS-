@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Explorer | Discover the Universe</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#070b2b;color:#eef5ff;line-height:1.6}
+header{background:#10164a;padding:25px;text-align:center;border-bottom:3px solid #62d9ff}
+nav a{color:#9bdcff;margin:0 12px;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:25px auto;padding:25px;background:#101638;border:1px solid #26346d;border-radius:12px}
+h1,h2,h3{color:#62d9ff}img{max-width:100%;border-radius:10px}.hero img{width:100%}
+.cards{display:flex;gap:20px;flex-wrap:wrap}.card{flex:1 1 220px;background:#171e4b;padding:15px;border-radius:10px}
+table{width:100%;border-collapse:collapse;margin-top:15px}th,td{border:1px solid #52629c;padding:10px;text-align:left}th{background:#1b2760}
+input,select,textarea{width:100%;padding:9px;margin:5px 0 12px;box-sizing:border-box}
+input[type=radio],input[type=checkbox]{width:auto}input[type=submit],input[type=reset]{width:auto;padding:10px 18px;margin-right:8px}
+footer{text-align:center;padding:25px;background:#10164a;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>🚀 SPACE EXPLORER</h1><p>Your Gateway to the Wonders of the Universe</p>
+<nav><a href="#home">Home</a><a href="#planets">Planets</a><a href="#missions">Missions</a><a href="#requirements">Explorer Gear</a><a href="#register">Register</a></nav>
+</header>
+
+<section id="home" class="hero">
+<h2>Welcome, Future Explorer!</h2>
+<p>Space Explorer is a learning hub for anyone curious about planets, spacecraft, and the mysteries beyond Earth.</p>
+<img src="images/space-hero.svg" alt="Spacecraft traveling through space">
+<p><strong>Look up, dream big, and explore beyond the stars.</strong></p>
+</section>
+
+<section id="planets">
+<h2>Explore the Planets</h2>
+<div class="cards">
+<div class="card"><h3>Mars</h3><img src="mars.svg" alt="Mars"><p>The Red Planet is known for its dusty surface, giant volcanoes, and deep valleys.</p></div>
+<div class="card"><h3>Earth</h3><img src="earth.svg" alt="Earth"><p>Our home planet has liquid water, a protective atmosphere, and an incredible variety of life.</p></div>
+<div class="card"><h3>Jupiter</h3><img src="jupiter.svg" alt="Jupiter"><p>Jupiter is the largest planet in our solar system and has a famous Great Red Spot.</p></div>
+<div class="card"><h3>Saturn</h3><img src="saturn.svg" alt="Saturn"><p>Saturn is a gas giant famous for its spectacular system of icy rings.</p></div>
+</div>
+</section>
+
+<section id="missions">
+<h2>Famous Space Missions</h2>
+<table>
+<tr><th>Mission</th><th>Destination</th><th>Purpose</th><th>Type</th></tr>
+<tr><td>Apollo 11</td><td>Moon</td><td>First crewed lunar landing</td><td>Human Spaceflight</td></tr>
+<tr><td>Voyager 1</td><td>Outer Solar System</td><td>Study distant planets and interstellar space</td><td>Probe</td></tr>
+<tr><td>Hubble</td><td>Earth Orbit</td><td>Observe distant objects in space</td><td>Space Telescope</td></tr>
+<tr><td>Mars Rover</td><td>Mars</td><td>Study the Martian surface</td><td>Rover</td></tr>
+</table>
+</section>
+
+<section id="requirements">
+<h2>Space Explorer Gear</h2><p>A safe explorer needs the right equipment before beginning a mission.</p>
+<ol><li>Space suit and helmet</li><li>Communication system</li><li>Oxygen and life-support equipment</li><li>Navigation computer</li><li>Scientific tools and sample containers</li></ol>
+<h3>Explorer Training Requirements</h3>
+<table>
+<tr><th>Skill</th><th>Beginner</th><th>Mission Level</th></tr>
+<tr><td>Science Knowledge</td><td>Basic concepts</td><td>Advanced concepts</td></tr>
+<tr><td>Navigation</td><td>Map reading</td><td>Space navigation</td></tr>
+<tr><td>Communication</td><td>Basic radio use</td><td>Mission communications</td></tr>
+<tr><td>Teamwork</td><td>Group activities</td><td>Mission coordination</td></tr>
+</table>
+</section>
+
+<section id="register">
+<h2>Join the Space Explorer Club</h2>
+<form>
+<fieldset><legend>Explorer Registration</legend>
+<label for="name">Full Name:</label><input type="text" id="name" name="name" placeholder="Enter your name" required>
+<label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Enter your email" required>
+<label for="password">Create Password:</label><input type="password" id="password" name="password" placeholder="Create a password" required>
+<label for="age">Age:</label><input type="number" id="age" name="age" min="10" max="100">
+<p>Preferred Explorer Role:</p>
+<input type="radio" id="astronaut" name="role" value="astronaut"><label for="astronaut">Astronaut</label>
+<input type="radio" id="scientist" name="role" value="scientist"><label for="scientist">Scientist</label>
+<input type="radio" id="engineer" name="role" value="engineer"><label for="engineer">Engineer</label>
+<br><br>
+<label for="planet">Favorite Planet:</label><select id="planet" name="planet"><option>Earth</option><option>Mars</option><option>Jupiter</option><option>Saturn</option></select>
+<label for="mission">Favorite Mission Type:</label><select id="mission" name="mission"><option>Human Spaceflight</option><option>Rover Mission</option><option>Space Probe</option><option>Space Telescope</option></select>
+<label for="message">Why do you want to explore space?</label><textarea id="message" name="message" rows="5" placeholder="Write your answer here..."></textarea>
+<input type="checkbox" id="updates" name="updates"><label for="updates">I want to receive space exploration updates.</label>
+<br><br><input type="submit" value="Register"><input type="reset" value="Clear">
+</fieldset>
+</form>
+</section>
+
+<footer><p>&copy; 2026 Space Explorer | Keep Looking Beyond the Stars 🚀</p></footer>
+</body>
+</html>
